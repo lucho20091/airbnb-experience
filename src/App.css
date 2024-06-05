@@ -1,38 +1,124 @@
-.App {
-  text-align: center;
+*,*::before,*::after{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App{
+  display: grid;
+  place-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.ComponentTop{
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  width: 550px;
+  height: 70px;
+  box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+.ComponentTop__Img {
+  margin-left: 2em;
+  width: 82px;
+  height: 25px;
+}
+.ComponentMain {
+  margin-top: 26px;
+  width: 395px;
+  height: 232px;
+  display: grid;
+  grid-template-rows: 7px 10px 12px 50px 25px 18px 10px;
+  grid-template-areas: 
+            ". . . f ."
+            ". b . . ."
+            ". . . . h"
+            "a . d . ."
+            ". c . . ."
+            ". . . g ."
+            ". . . . i"
+            ". . e . .";
+}
+.ComponentMain__Img{
+  width: 72px;
+  height: 96px;
+  border-radius: 9px;
+  object-fit: cover;
+}
+.small{
+  height: 63px;
+}
+
+.image1{
+  grid-area: a;
+}
+.image2{
+  grid-area: b;
+}
+.image3{
+  grid-area: c;
+}
+.image4{
+  grid-area: d;
+}
+.image5{
+  grid-area: e;
+}
+.image6{
+  grid-area: f;
+}
+.image7{
+  grid-area: g;
+}
+.image8{
+  grid-area: h;
+}
+.image9{
+  grid-area: i;
+}
+
+.ComponentText{
+  width: 550px;
+}
+.ComponentText__H1{
+  margin: 32px 0 0;
+  width: 70%;
+  font-size: 36px;
+  color: #000;
+  font-weight: 600;
+}
+.ComponentText__P{
+  width: 60%;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 300;
+}
+.ComponentCard{
+  display: flex;
+  width: 550px;
+}
+.ComponentCard__Img{
+  width: 176px;
+  height: 235px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+  top: 0.3em;
+  left: 0.3em;
+  background: white;
+  width: 61px;
+  height: 20px;
+  font-size: 10px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.ComponentCard__P{
+  margin: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bold{
+  font-weight: bold;
 }
